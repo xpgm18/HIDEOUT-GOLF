@@ -52,6 +52,29 @@ p {
     padding: 0;
 }
 
+.yardage-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.yardage-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.yardage-tee {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.yardage-distance {
+    font-size: 0.95rem;
+}
+
 footer {
     margin-top: 1rem;
     border-top: 1rem solid#000;

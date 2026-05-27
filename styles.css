@@ -1,6 +1,6 @@
 /* ===== CSS VARIABLES (Color Management) ===== */
 :root {
-    --color-primary: #2c5f2d;
+    --color-primary: green;
     --color-primary-dark: #1e4620;
     --color-accent-red: #d32f2f;
     --color-accent-yellow: #ffc107;
@@ -134,30 +134,31 @@ body {
 
 /* Navigation Controls */
 .nav-controls {
-    padding: var(--spacing-sm);
+    padding: 2px 0;
 }
 
 /* Previous/Next Buttons */
 .nav-buttons {
     display: flex;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm);
-    margin-bottom: var(--spacing-sm);
+    gap: 5px;
+    padding: 5px;
+    margin-bottom: 0;
 }
 
 .btn {
     flex: 1;
-    padding: var(--spacing-md);
+    padding: 4px 6px;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
-    border: 2px solid var(--color-primary);
+    border: 1px solid var(--color-primary);
     background-color: var(--color-bg-green-light);
     color: var(--color-primary);
-    border-radius: var(--border-radius);
+    border-radius: 2px;
     transition: background-color 0.2s ease;
     cursor: pointer;
+    line-height: 1.2;
 }
 
 .btn:hover,
@@ -174,39 +175,41 @@ body {
 /* Hole Title */
 .hole-title {
     text-align: center;
-    padding: var(--spacing-md);
+    padding: 4px 0;
     background-color: var(--color-primary);
-    color: var(--color-accent-red);
-    font-size: 28px;
+    color: var(--color-accent-yellow);
+    font-size: 16px;
     font-weight: bold;
-    border: 2px solid #000;
-    margin: var(--spacing-sm);
-    border-radius: var(--border-radius);
+    border: 1px solid #000;
+    margin: 2px 0;
+    border-radius: 2px;
+    line-height: 1.2;
 }
 
 /* Bookmarks */
 .bookmarks {
     display: flex;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm);
+    gap: 2px;
+    padding: 2px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .bookmarks a {
     flex: 1;
-    min-width: 180px;
-    padding: var(--spacing-md);
+    min-width: 110px;
+    padding: 5px 8px;
     text-align: center;
     background-color: var(--color-bg-green-light);
     color: var(--color-primary);
     text-decoration: none;
-    border: 2px solid var(--color-primary);
-    border-radius: var(--border-radius);
-    font-size: 13px;
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    font-size: 11px;
     font-weight: bold;
     transition: all 0.2s ease;
     cursor: pointer;
+    line-height: 1.2;
 }
 
 .bookmarks a:hover,
@@ -452,9 +455,9 @@ main {
     .nav-controls {
         display: grid;
         grid-template-columns: auto 1fr auto;
-        gap: var(--spacing-md);
+        gap: 2px;
         align-items: center;
-        padding: var(--spacing-md);
+        padding: 2px;
     }
 
     .nav-buttons {
@@ -466,20 +469,22 @@ main {
     .hole-title {
         grid-column: 2;
         margin: 0;
-        padding: var(--spacing-md);
+        padding: 4px 0px;
+        font-size: 16px;
     }
 
     .bookmarks {
         grid-column: 3;
         padding: 0;
         margin: 0;
+        gap: 3px;
     }
 
     .bookmarks a {
         flex: none;
         min-width: auto;
-        padding: var(--spacing-sm) var(--spacing-md);
-        font-size: 12px;
+        padding: 5px 8px;
+        font-size: 11px;
     }
 
     /* Image grids for tablet */
@@ -515,24 +520,25 @@ main {
         padding: var(--spacing-lg);
     }
 
+    /* KEEP HEADER COMPRESSED - DON'T EXPAND IT */
     .btn {
-        font-size: 16px;
-        padding: var(--spacing-lg);
+        font-size: 10px;
+        padding: 4px 6px;
     }
 
     .hole-title {
-        font-size: 32px;
-        padding: var(--spacing-lg);
+        font-size: 16px;
+        padding: 4px 0;
     }
 
     .bookmarks a {
-        padding: var(--spacing-md);
-        font-size: 14px;
+        padding: 5px 5px;
+        font-size: 11px;
     }
 
     .nav-menu a {
-        font-size: 14px;
-        padding: var(--spacing-md);
+        font-size: 13px;
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 
     .section-title {
