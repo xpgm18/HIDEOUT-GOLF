@@ -30,6 +30,11 @@
     box-sizing: border-box;
 }
 
+.bold-red {
+    color: red;
+    font-weight: bold;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -300,7 +305,8 @@ main {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        (2, 1fr);
     gap: var(--spacing-md);
 }
 
@@ -475,7 +481,8 @@ main {
     /* Reorganize navigation controls */
     .nav-controls {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        /* changed to repeat 3 from 5 Thursday May 28 */
+        grid-template-columns: repeat(3, 1fr);
         gap: 2px;
         align-items: center;
         padding: 2px;
@@ -556,7 +563,8 @@ main {
 
     .nav-controls {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        /* changed to repeat 3 from 5 Thursday May 28 */
+        grid-template-columns: repeat(3, 1fr);
         gap: 2px;
         align-items: stretch;
         padding: 2px;
@@ -662,8 +670,8 @@ main {
     }
 
     .nav-controls {
-        /* grid-template-columns: auto 1fr auto; */
         grid-template-columns: repeat(5, 1fr);
+        /* Desktop: extra space for visual balance */
     }
 }
 
