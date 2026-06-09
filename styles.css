@@ -108,7 +108,7 @@ body {
     outline-offset: 2px;
 }
 
-/* Navigation Menu (Hidden on Mobile by Default) */
+/* Navigation Menu (Hidden on Mobile by Default) -- this is for cell phone*/
 .nav-menu {
     display: none;
     flex-direction: column;
