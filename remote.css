@@ -191,7 +191,6 @@ section {
 
 .landscape-grid img {
     width: 100%;
-    height: 200 px;
     object-fit: cover;
     border-radius: 8px;
 }
